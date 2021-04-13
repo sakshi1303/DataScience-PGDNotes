@@ -1,0 +1,102 @@
+Datatypes - 
+
+Numerical
+Nominal Categorical
+Ordinal Categorical
+Date & time
+
+Fixing Rows -
+
+Delete Summary Rows - Total & SubTotal rows
+Delete Incorrect Rows - Header & Footer rows
+Delete Extra Rows - Blank/Page Number Rows
+
+Fixing Columns - 
+
+Add Missing Column Names
+Rename columns - Abbreviated/Encoded Columns
+Delete unnecessary columns/Unique Identifier Columns
+Align misaligned columns - Left/Right Shift
+Convert the columns to its appropriate datatype
+Split/Merge the required columns - jobedu, firstName || lastName => fullName
+
+Missing Values - 
+
+Identify missing values - NA, NULL, XX, 999 etc
+Rows can be deleted if no of missing values are less/insignificant
+Columns can be deleted if missing values are high/significant in number
+
+Types of Missing Values - 
+
+MCAR - Missing Completely At Random
+MAR -  Missing At Random
+MNAR - Missing Not At Random
+
+Impute Missing Values - 
+
+Categorical Column - mode
+Numerical Column - mean/median/mode
+
+Outliers - 
+
+Imputation
+Deletion
+Binning
+Capping
+
+Standardise Values - 
+
+Units - miles/hr to km/hr
+Precision - 4.5312345kg to 4.53 kg
+Case - UPPER, LOWER, INITCAP
+Format - Date format YYYY/MM/DD
+
+Fix Invalid Values -
+
+Correct values that lie byond range
+Correct values that do not belong in list - E/F bloog groups
+Fix incorrect structure - like phone no
+Validate internal rules - maturity date > current date
+
+Filter Data -
+
+Remove indentical/duplicate rows
+Filter Rows 
+Filter Columns 
+Aggregate Data
+
+
+Univariate Analysis -
+
+Categorical Unordered/Nominal      - Job Category
+Categorical Ordered                - Education Primary/Secondary/Tertiary
+Statistics on numerical variable   - Mean/Median/Mode/Variance/Std Deviation/IQR
+Numerical Variable
+
+Bivariate Analysis -
+
+Analysis b/w Two Numerical Variables
+Analysis b/w Numerical & Categorical Variables
+Correlation vs Causation
+Analysis b/w Two Categorical Variables
+Multivariate Analysis
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
