@@ -101,3 +101,118 @@ lm.fit(X_train, y_train)
 
 ```
  
+**Linear Regression Cost Function**
+
+To find the optimum betas, we need to reduce the cost function for all data points, which is given as 
+
+        J(θ0,θ1) = ∑(i=1 to N) (yi - yi(p))2
+        
+
+**Optimisation Methods**
+
+There are two types of Optimisation methods - 
+
+1. Closed form solution (Differentiation)
+2. Iterative form solution (Gradient Descent)
+
+
+To compute optimal thetas, we need to apply Gradient Descent to the Cost function  given as follows -
+
+∂ J(θ)
+∂θ
+
+Gradient descent is an iterative method of optimising an objective function, in our case the cost function, by moving toward the negative of the gradient. To compute θ1, equation will be - 
+
+θ1 = θ0 - η∂ J(θ)
+           ∂θ
+
+Where η is known as the learning rate, which defines the speed at which we want to move towards negative of the gradient.
+
+
+**Multiple Linear Regression**
+
+ It represents the relationship between two or more independent input variables and a response variable. Formulation/Equation of MLR - 
+ 
+        Y = β0 + β1X1 + β2X2 + .... + βpXp + ϵ
+  
+Below aspects are same as that of SLR
+
+- The model now fits a hyperplane instead of a line.
+- Coefficients are still obtained by minimising the sum of squared errors, the least squares criteria.
+- The assumptions from simple linear regression still hold: zero mean, independent and normally distributed error terms with constant variance.
+
+The new aspects to consider when moving from simple to multiple linear regression are as follows:
+
+- Overfitting
+  - As you keep adding variables, the model may become far too complex.
+  - It may end up memorising the training data and, consequently, fail to generalise.
+  - A model is generally said to overfit when the training accuracy is high while the test accuracy is very low.
+- Multicollinearity
+  - This refers to associations between predictor variables.
+- Feature selection
+  - Selecting an optimal set from a pool of given features, many of which might be redundant, becomes an important task.
+
+**Multicollinearity**
+
+Multicollinearity refers to the phenomenon of having related predictor (independent)  variables in the input data set. In simple terms, in a model that has been built using several independent variables, some of these variables might be interrelated, due to which the presence of that variable in the model is redundant. You drop some of these related independent variables as a way of dealing with multicollinearity.
+
+Multicollinearity affects the following:
+
+- Interpretation : change in Y when all others are held constant might not apply
+- Inference : Coefficients swing wildly, signs can invert. Therefore, p-values are not reliable.
+
+There are two ways to deal with Multicollinearity - 
+
+- Looking at pairwise correlations
+- Checking the variance inflation factor (VIF)
+
+        VIFi = 1/(1 - Ri2)
+
+The common heuristic we follow for the VIF values is:
+
+- > 10:  VIF value is definitely high, and the variable should be eliminated.
+- > 5:  Can be okay, but it is worth inspecting.
+- < 5: Good VIF value. No need to eliminate this variable.
+
+Some methods to deal with Multicollinearity - 
+
+- Dropping Variables
+  - Drop the variable that is highly correlated with others.
+  - Pick the business interpretable variable.
+- Creating a new variable using the interactions of the older variables
+  - Add interaction features, i.e., features derived using some of the original features.
+- Variable transformations
+  - Principal component analysis
+
+Standardisation :- x = (x - mean(x))/sd(x)
+MinMax Scaling  :- x = (x - min(x))/(max(x) - min(x))
+
+**Model Assessment and Comparison**
+
+    Adjusted R2 = 1 - (1-R2)(N-1)/(N-p-1)
+
+    AIC = n * log(RSS/n) + 2p
+
+n = Sample Size
+p = number of predictor variables
+
+The adjusted R2 adjusts the value of R2 such that a model with a larger number of variables is penalised.
+
+**Feature Selection**
+
+Manual Feature Selection
+
+- Build the model with all the features
+- Drop the features that are the least helpful in prediction (high p-value)
+- Drop the features that are redundant (using correlations and VIF)
+- Rebuild the model and repeat.
+
+Manual Feature Elimination is not a practical approach when we have large number of features.
+
+Automated Feature Selection
+
+- Automatically selects the number of given feature variables.
+
+We will combine the manual approach and the automated one in order to get an optimal model relevant to the business. Hence, we first do an automated elimination (coarse tuning), and when we have a small set of potential variables left to work with, we can use our expertise and subjectivity to eliminate a few other features (fine tuning).
+
+
