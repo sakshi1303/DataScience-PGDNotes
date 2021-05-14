@@ -215,4 +215,13 @@ Automated Feature Selection
 
 We will combine the manual approach and the automated one in order to get an optimal model relevant to the business. Hence, we first do an automated elimination (coarse tuning), and when we have a small set of potential variables left to work with, we can use our expertise and subjectivity to eliminate a few other features (fine tuning).
 
+Multiple Linear Regression in Python steps -
+
+- Reading and Understanding the Data
+- Data Preparation
+- Initial Steps
+- Building the Model (1,2.. )
+- Residual Analysis and Predictions
+- Variable Selection using RFE
+
 
