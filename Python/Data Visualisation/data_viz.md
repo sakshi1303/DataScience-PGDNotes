@@ -25,8 +25,8 @@ Topics -
   - Stacked Bar Charts
   - Plotly
   
-  Additional Reading -
-  
-  - [Matplotlib Official Documentation](https://matplotlib.org/3.2.1/tutorials/index.html)
-  - [Choosing Right Plot](https://blog.hubspot.com/marketing/types-of-graphs-for-data-visualization#sm.000vodl7ch6rf7e112a2q13r9cno0)
-  - [Plotting Real time data](https://www.youtube.com/watch?v=Ercd-Ip5PfQ)
+Additional Reading -
+
+- [Matplotlib Official Documentation](https://matplotlib.org/3.2.1/tutorials/index.html)
+- [Choosing Right Plot](https://blog.hubspot.com/marketing/types-of-graphs-for-data-visualization#sm.000vodl7ch6rf7e112a2q13r9cno0)
+- [Plotting Real time data](https://www.youtube.com/watch?v=Ercd-Ip5PfQ)
