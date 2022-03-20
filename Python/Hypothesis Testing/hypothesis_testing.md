@@ -1,1 +1,49 @@
+### Summary
 
+- Hypothesis — a claim or an assumption that you make about one or more population parameters
+- Types of hypothesis:
+  - Null hypothesis (H₀) 
+    - Makes an assumption about the status quo
+    - Always contains the symbols ‘=’, ‘≤’ or ‘≥’
+  - Alternate hypothesis (H₁) 
+    - Challenges and complements the null hypothesis
+    - Always contains the symbols ‘≠’, ‘<’ or ‘>’
+- Types of tests:
+  - Two-tailed test
+    - The critical region lies on both sides of the distribution
+    - The alternate hypothesis contains the ≠ sign
+  - Lower-tailed test
+    - The critical region lies on the left side of the distribution
+    - The alternate hypothesis contains the < sign
+  - Upper-tailed test 
+    - The critical region lies on the right side of the distribution
+    - The alternate hypothesis contains the > sign
+- Making a decision - Critical value method:
+  - Calculate the value of Zc from the given value of α (significance level)
+  - Calculate the critical values (UCV and LCV) from the value of Zc
+  - Make the decision on the basis of the value of the sample mean (x bar) with respect to the critical values (UCV AND LCV)
+- Making a decision using the p-value method, which involves the following steps:
+  - Calculate the value of the Z-score for the sample mean point of the distribution.
+  - Calculate the p-value from the cumulative probability of the given Z-score using the Z-table.
+  - Make a decision on the basis of the p-value with respect to the given value of α (significance level).
+- Types of errors:
+  - Type-I error: This occurs when you reject a true null hypothesis. Its probability is represented by α.
+  - Type-II error: This occurs when you fail to reject a false null hypothesis. Its probability is represented by β.
+- T-distribution:
+  - A T-distribution is used whenever the standard deviation of the population is unknown
+  - The degrees of freedom of a T-distribution is equal to sample size n - 1
+  - For sample size ≥ 30, the T-distribution becomes the same as the normal distribution
+  - The output values and results of both t-test and z-test are same for sample size ≥ 30
+- Two-sample mean test - paired:
+  - It is used when your sample observations are from the same individual or object
+  - During this test, you are testing the same subject twice
+- Two-sample mean test - unpaired:
+  - During this test, you are not testing the same subject twice
+  - It is used when your sample observations are independent
+- Two-sample proportion test:
+  - It is used when your sample observations are categorical, with two categories
+  - It could be True/False, 1/0, Yes/No, Male/Female, Success/Failure, etc. 
+- A/B Testing:
+  - A/B testing is a direct industry application of the two-sample proportion test
+  - It is a widely used process in digital companies in the e-commerce, manufacturing and advertising domains
+  - It provides a way to test two different versions of the same element and see which one performs better
